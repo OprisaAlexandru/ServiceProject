@@ -1,0 +1,11 @@
+﻿//Database initialization:
+CREATE DATABASE clienti;
+USE clienti;
+CREATE TABLE `dateLogare` (
+`idClient` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+`username` varchar(255) NOT NULL,
+`password` varchar(255) NOT NULL );
+INSERT INTO `dateLogare` (`idClient`, `username`, `password`) VALUES
+(1, 'ion.stefan', 'abc123'),
+(2, 'alex.catalin', '123456789'),
+(3, 'mihai.stanciu', '123abc');
